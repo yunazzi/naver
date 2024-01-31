@@ -1,0 +1,30 @@
+.wrapper{
+    min-width: 1340px;
+}
+
+.common-inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.blind{
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+/* sp1 */
+.header .gnb .gnb-item [class*="ic-"]::after,
+.header .gnb .gnb-item [class*="ic-"]::before,
+.header .group-search [class*="btn-"]::after,
+.header .pay-area .link-pay::after,
+.header .alert-area .btn-alert::after,
+.header .expand-area .btn-expand::after{
+    /* 상속받지못할까봐 따로따로 작성 */
+    background-image: url(../images/sp1.png);
+    background-repeat: no-repeat;
+    background-size: 424px; /* 이미지가 2배라 반절로 계산 */
+    width: 44px; height: 44px;
+}

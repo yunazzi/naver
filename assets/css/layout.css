@@ -1,0 +1,193 @@
+@import './reset.css';
+@import './common.css';
+
+
+.header{}
+.header .common-inner{
+    position: relative;
+    height: 261px;
+    background: #0f0;
+    padding: 64px 0 42px;
+}
+.header .group-search{
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+}
+.header .group-search .wrap{
+    display: flex;
+    width: 706px;
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+    background-color: #fff;
+}
+.header .group-search .logo{}
+.header .group-search .logo a{
+    position: relative;
+    display: block;
+    margin-right: 12px;
+    padding: 17px 17px 17px 27px;
+}
+.header .group-search .logo svg{
+    width: 24px; height: 24px;
+}
+.header .group-search .logo path{
+    fill: #03c75a;
+}
+.header .group-search form{
+    flex: 1;
+}
+.header .group-search fieldset{
+    display: flex;
+}
+.header .group-search .input-text{
+    width: 480px;
+    height: 58px;
+    color: #000;
+    z-index: 10;
+    position: relative;
+    padding: 17px 0;
+    background-color: rgba(0,0,0,0);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    outline: 0;
+    margin-right: auto;
+}
+.header .group-search .btn-keyboard{
+    padding: 21px 3px;
+}
+.header .group-search .btn-keyboard::after{
+    content: "";
+    display: block;
+    background-position: -50px -270px;
+    width: 24px;
+    height: 16px;
+}
+.header .group-search .btn-help{
+    padding: 26px 6px;
+}
+.header .group-search .btn-help::after{
+    content: "";
+    display: block;
+    background-position: -323px -170px;
+    width: 10px;
+    height: 6px;
+}
+.header .group-search .btn-search{
+    padding: 17px 27px 16px 10px;
+}
+.header .group-search .btn-search::after{
+    content: "";
+    display: block;
+    background-position: -364px -159px;
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+.header .gnb{
+    position: relative;
+    width: 676px;
+    margin: 72px auto 0;
+}
+.header .gnb .gnb-list{
+    display: flex;
+    gap: 4px;
+}
+.header .gnb .gnb-item{
+    flex: 1;
+    text-align: center;
+}
+.header .gnb .gnb-item a{
+    display: flex;
+    flex-direction: column;
+}
+.header .gnb .gnb-item [class*="ic-"]{
+    width: 48px;
+    height: 48px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.header .gnb .gnb-item [class*="ic-"]::before{
+    content: "";
+    display: block;
+    background-position: 0px -128px;
+    width: 54px;
+    height: 54px;
+}
+.header .gnb .gnb-item [class*="ic-"]::after{
+    background-position: -250px -90px;
+    width: 44px;
+    height: 44px;
+}
+.header .gnb .gnb-item .ic-mail{
+    width: 48px;
+    height: 48px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.header .gnb .gnb-item .name{
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 7px;
+}
+
+
+
+
+
+
+.header .expand-area{
+    position: absolute;
+    top: 18px;
+    left: -10px;
+}
+.header .expand-area .btn-expand{padding: 10px;}
+.header .expand-area .btn-expand::after{
+    display: block;
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-position: -364px 0px;
+}
+.header .pay-area{
+    position: absolute;
+    top: 18px;
+    right: 42px;
+}
+.header .pay-area .link-pay{
+    display: block;
+    padding: 10px 8px;
+}
+.header .pay-area .link-pay::after{
+    content: "";
+    display: block;
+    background-position: -31px -316px;
+    width: 30px;
+    height: 26px;
+}
+.header .alert-area{
+    position: absolute;
+    top: 18px;
+    right: -10px;
+    width: 46px;
+}
+.header .alert-area .btn-alert{
+    padding: 10px;
+}
+.header .alert-area .btn-alert::after{
+    display: block;
+    content: "";
+    background-position: -364px -54px;
+    width: 26px; height: 26px;
+}

@@ -1,0 +1,10 @@
+.container .common-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.column-left{
+    width: 830px;
+}
+.column-right{
+    width: 420px;
+}
